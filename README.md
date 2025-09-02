@@ -12,22 +12,23 @@ A modern boilerplate for building full-stack web applications with a focus on re
 Follow these steps to get your project up and running:
 
 1. Clone the repository:
-
+```
     git clone [your-repo-url]
     cd [your-project-folder]
+```
 
 2. Install dependencies:
 
     npm install
 
 3. Set up your Firebase Project:
-- Create a new project in the [Firebase Console](https://console.firebase.google.com/).
-- Enable Authentication and **Firestore Database**.
-- Create a new web app and copy its configuration.
+  - Create a new project in the [Firebase Console](https://console.firebase.google.com/).
+  - Enable Authentication and **Firestore Database**.
+  - Create a new web app and copy its configuration.
 
 4. Configure environment variables:
-- Create a `.env.local` file in the root of your project.
-- Add your Firebase configuration keys, prefixed with `NEXT_PUBLIC_`.
+  - Create a `.env.local` file in the root of your project.
+  - Add your Firebase configuration keys, prefixed with `NEXT_PUBLIC_`.
 
     NEXT_PUBLIC_FIREBASE_API_KEY=your-api-key
     NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your-auth-domain
