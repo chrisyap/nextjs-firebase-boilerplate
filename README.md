@@ -13,13 +13,14 @@ Follow these steps to get your project up and running:
 
 1. Clone the repository:
 ```
-    git clone [your-repo-url]
-    cd [your-project-folder]
+git clone [your-repo-url]
+cd [your-project-folder]
 ```
 
 2. Install dependencies:
-
-    npm install
+```
+npm install
+```
 
 3. Set up your Firebase Project:
   - Create a new project in the [Firebase Console](https://console.firebase.google.com/).
@@ -29,18 +30,19 @@ Follow these steps to get your project up and running:
 4. Configure environment variables:
   - Create a `.env.local` file in the root of your project.
   - Add your Firebase configuration keys, prefixed with `NEXT_PUBLIC_`.
-
-    NEXT_PUBLIC_FIREBASE_API_KEY=your-api-key
-    NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your-auth-domain
-    NEXT_PUBLIC_FIREBASE_PROJECT_ID=your-project-id
-    NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your-storage-bucket
-    NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your-messaging-sender-id
-    NEXT_PUBLIC_FIREBASE_APP_ID=your-app-id
+```
+NEXT_PUBLIC_FIREBASE_API_KEY=your-api-key
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your-auth-domain
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=your-project-id
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your-storage-bucket
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your-messaging-sender-id
+NEXT_PUBLIC_FIREBASE_APP_ID=your-app-id
+```
 
 5. Run the development server:
-
+```
 npm run dev
-
+```
 Open http://localhost:3000 in your browser to see the result.
 
 ## Project Structure
