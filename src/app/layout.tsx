@@ -10,8 +10,11 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
-      <body className="bg-stone-900 text-white font-sans">
+    <html lang="en" suppressHydrationWarning>
+      <body
+        className="bg-stone-900 font-sans text-white"
+        suppressHydrationWarning
+      >
         <FirebaseProvider>{children}</FirebaseProvider>
       </body>
     </html>
