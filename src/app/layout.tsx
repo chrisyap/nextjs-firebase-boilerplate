@@ -12,7 +12,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className="bg-stone-900 font-sans text-white"
+        className="bg-slate-900 font-sans text-white"
         suppressHydrationWarning
       >
         <FirebaseProvider>{children}</FirebaseProvider>

@@ -1,4 +1,4 @@
-import { FirebaseProvider } from "@/providers/FirebaseProvider";
+import React from "react";
 import { ReactNode } from "react";
 import SideNav from "@/components/SideNav";
 
@@ -10,13 +10,9 @@ export const metadata = {
 
 export default function AdminLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
-      <body className="bg-gray-900 text-white font-sans">
-        <FirebaseProvider>
-          <SideNav />
-          <div className="p-4 sm:ml-64">{children}</div>
-        </FirebaseProvider>
-      </body>
-    </html>
+    <React.Fragment>
+      <SideNav />
+      <main>{children}</main>
+    </React.Fragment>
   );
 }

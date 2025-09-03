@@ -1,6 +1,5 @@
 "use client";
 
-import { Button } from "@headlessui/react";
 import { useFirebase } from "../providers/FirebaseProvider";
 
 export default function HomePage() {

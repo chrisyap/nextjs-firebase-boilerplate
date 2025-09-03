@@ -1,5 +1,6 @@
 "use client";
 
+import { LoaderCircle } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import { useFirebase } from "../../providers/FirebaseProvider";
@@ -21,9 +22,8 @@ export default function LogoutPage() {
 
   return (
     <div className="flex min-h-screen flex-col items-center justify-center p-6">
-      <h1 className="mb-6 animate-pulse text-center text-white">
-        Logging out...
-      </h1>
+      <LoaderCircle className="animate-spin" size={64} />
+      <p className="mt-4 text-white">Logging out...</p>
     </div>
   );
 }
